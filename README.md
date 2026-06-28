@@ -1,7 +1,7 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-27
+last_updated: 2026-06-28
 source_of_truth: company-os-starter-kit
 load_policy: reference
 related:
@@ -51,22 +51,27 @@ The OS owns intent and operating rules. Live state belongs in systems of record 
 
 ## Folder map
 
-| Folder | purpose |
-| --- | --- |
-| `company/` | Purpose, vision, values, structure, ICP, positioning, voice, terminology, design system and market context. |
-| `strategy/` | Goal, today, analysis, thesis and tradeoffs. |
-| `run/` | Strategic processes derived from the thesis, with owners, cadence, metrics, review rituals, and systems of record. |
-| `change/` | Strategic projects derived from the thesis, each with outcome, owner, deadline, metric, and target operating change. |
-| `wiki/` | SOPs, playbooks, onboarding, recurring processes, and durable reference docs. |
-| `clients/` | One folder per client, with per-client context templates so agents do not mix voices, ICPs, campaigns, constraints, or confidential assumptions. |
-| `raw/` | Transcripts, research dumps, exports, notes, and other unprocessed source material. |
-| `plugin/` | Agent commands, hooks, safety rules, MCP setup notes, and tool integration configs. |
-| `workflows/` | Function-level operating guides for sales, marketing/GTM, product, delivery, ops, and finance. |
-| `decisions/` | ADR-style context, decision, consequences, and supersession records. |
-| `output/` | Generated drafts, reports, briefs, and bundles; never canonical context. |
-| `archive/` | Retired material excluded from default agent loading. |
-| `.templates/` | Reusable templates for all major document types. |
-| `.ai/skills/` | Company OS managed starter skills for operators and future CLI tooling. |
+```text
+company-os-starter-kit/
+|-- company/                 # Purpose, vision, values, structure, ICP, positioning, voice, terminology and design system.
+|   `-- market/              # Market context, buying signals, competitors and alternatives.
+|-- strategy/                # Goal, today, thesis, tradeoffs and strategy analysis.
+|   `-- analysis/            # Dated analysis documents for specific strategy questions.
+|-- run/                     # Strategic processes with owners, cadence, metrics, rituals and systems of record.
+|-- change/                  # Strategic projects, outcomes, risks, owners, dates and target operating changes.
+|   `-- lessons/             # Project reflections, lesson index and harvest candidates.
+|-- wiki/                    # SOPs, playbooks, onboarding and durable reference docs.
+|-- clients/                 # One folder per client; keep context, constraints and confidential assumptions separated.
+|-- workflows/               # Function-level guides for sales, marketing/GTM, product, delivery, ops and finance.
+|-- decisions/               # ADR-style decision records, consequences and supersession history.
+|-- raw/                     # Transcripts, research dumps, exports, notes and other unprocessed source material.
+|-- output/                  # Generated drafts, reports, briefs and bundles; never canonical context.
+|-- plugin/                  # Agent commands, hooks, safety rules, MCP setup notes and tool integration configs.
+|-- .templates/              # Reusable templates for all major document types.
+|-- .ai/
+|   `-- skills/              # Company OS managed starter skills for operators and future CLI tooling.
+`-- archive/                 # Retired material excluded from default agent loading.
+```
 
 ## Metadata
 

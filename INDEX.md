@@ -17,7 +17,7 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 
 | File | purpose | owner | status | last updated | load policy |
 | --- | --- | --- | --- | --- | --- |
-| `README.md` | Company OS purpose, quick start, four-layer model, folder map | operator | template | 2026-06-27 | reference |
+| `README.md` | Company OS purpose, quick start, four-layer model, folder map | operator | template | 2026-06-28 | reference |
 | `AGENTS.md` | Canonical model-agnostic agent guide | operator | template | 2026-06-27 | always |
 | `CLAUDE.md` | Claude-specific entrypoint and compatibility notes | operator | template | 2026-06-27 | always |
 | `ARCHITECTURE.md` | Systems of record, Company OS, read layer, operating surface | operator | template | 2026-06-27 | always |
