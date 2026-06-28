@@ -17,5 +17,5 @@ This project follows a human-reviewed changelog model. Add entries under `Unrele
 
 ## Unreleased
 
+- Added a repository-managed `board-of-directors` skill for board-style review of high-stakes company decisions.
 - Added repository housekeeping files: `.gitignore`, `CHANGELOG.md`, and `LICENSE`.
-

@@ -22,8 +22,8 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 | `CLAUDE.md` | Claude-specific entrypoint and compatibility notes | operator | template | 2026-06-27 | always |
 | `ARCHITECTURE.md` | Systems of record, Company OS, read layer, operating surface | operator | template | 2026-06-27 | always |
 | `GOVERNANCE.md` | PR workflow, ownership, harvest loop, guardrails | operator | template | 2026-06-27 | always |
-| `INDEX.md` | Content catalog | operator | template | 2026-06-27 | always |
-| `SKILLS.md` | Installation and authoring guide for repository-managed AI skills | operator | template | 2026-06-27 | reference |
+| `INDEX.md` | Content catalog | operator | template | 2026-06-28 | always |
+| `SKILLS.md` | Installation and authoring guide for repository-managed AI skills | operator | template | 2026-06-28 | reference |
 | `CHANGELOG.md` | Human-reviewed notable changes for releases and project history | operator | template | 2026-06-28 | reference |
 | `LICENSE` | MIT license terms for repository reuse | operator | template | 2026-06-28 | reference |
 | `.gitignore` | Git ignore rules for local, editor, dependency, build, log, and cache files | operator | template | 2026-06-28 | reference |
@@ -47,7 +47,7 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 | `output/` | Generated drafts, reports, briefs, bundles | operator | template | 2026-06-27 | reference |
 | `archive/` | Retired material | operator | template | 2026-06-27 | archive |
 | `.templates/` | Reusable document templates | operator | template | 2026-06-27 | reference |
-| `.ai/skills/` | Company OS managed starter skills | operator | template | 2026-06-27 | task |
+| `.ai/skills/` | Company OS managed starter skills | operator | template | 2026-06-28 | task |
 
 ## Company context
 
@@ -101,5 +101,6 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 | `.templates/decision.md` | ADR-style decision template | operator | template | 2026-06-27 | reference |
 | `.templates/raw-ingestion-summary.md` | Raw source processing template | operator | template | 2026-06-27 | reference |
 | `.templates/output-brief.md` | Generated output brief template | operator | template | 2026-06-27 | reference |
-| `SKILLS.md` | Installation and authoring guide for repository-managed AI skills | operator | template | 2026-06-27 | reference |
+| `SKILLS.md` | Installation and authoring guide for repository-managed AI skills | operator | template | 2026-06-28 | reference |
+| `.ai/skills/board-of-directors/SKILL.md` | Managed skill for board-style review of high-stakes company decisions and tradeoffs | operator | template | 2026-06-28 | task |
 | `.ai/skills/company-purpose/SKILL.md` | Managed skill for company purpose interview and drafts | operator | template | 2026-06-27 | task |

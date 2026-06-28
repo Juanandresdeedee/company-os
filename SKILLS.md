@@ -1,11 +1,12 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-27
+last_updated: 2026-06-28
 source_of_truth: company-os-starter-kit
 load_policy: reference
 related:
   - /.ai/skills/README.md
+  - /.ai/skills/board-of-directors/SKILL.md
   - /.ai/skills/company-purpose/SKILL.md
   - /AGENTS.md
   - /CLAUDE.md
@@ -21,6 +22,7 @@ Skills are authored here as durable company assets. Local AI tools may need a co
 
 | Skill | source | purpose |
 | --- | --- | --- |
+| `board-of-directors` | `.ai/skills/board-of-directors/SKILL.md` | Board-style review for high-stakes founder/operator decisions, strategy, finance, risk, governance, customer, and operations tradeoffs. |
 | `company-purpose` | `.ai/skills/company-purpose/SKILL.md` | Guided interview for purpose, vision, values, principles, strategic ambition, and a 12 to 36 month goal. |
 
 ## Suggested external skills
@@ -61,10 +63,12 @@ To install only one skill:
 ```sh
 mkdir -p "$HOME/.codex/skills"
 
-if [ -e "$HOME/.codex/skills/company-purpose" ]; then
-  echo "skip company-purpose: already installed"
+name="board-of-directors"
+
+if [ -e "$HOME/.codex/skills/$name" ]; then
+  echo "skip $name: already installed"
 else
-  cp -R ".ai/skills/company-purpose" "$HOME/.codex/skills/company-purpose"
+  cp -R ".ai/skills/$name" "$HOME/.codex/skills/$name"
 fi
 ```
 

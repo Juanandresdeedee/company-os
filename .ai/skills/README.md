@@ -1,11 +1,12 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-27
+last_updated: 2026-06-28
 source_of_truth: company-os-starter-kit
 load_policy: task
 related:
   - /SKILLS.md
+  - /.ai/skills/board-of-directors/SKILL.md
   - /.ai/skills/company-purpose/SKILL.md
 ---
 
@@ -32,4 +33,5 @@ Use `SKILLS.md` for local installation and update instructions.
 
 | Skill | purpose |
 | --- | --- |
+| `board-of-directors` | Board-style review for high-stakes founder/operator decisions, strategy, finance, risk, governance, customer, and operations tradeoffs. |
 | `company-purpose` | Guided interview for purpose, vision, values, principles, strategic ambition, and a 12-36 month goal. |
