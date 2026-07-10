@@ -45,6 +45,7 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 | `decisions/` | ADR-style decisions | operator | template | 2026-06-27 | reference |
 | `decisions/AGENTS.md` | Rules for creating and updating decisions | operator | template | 2026-06-27 | always |
 | `output/` | Generated drafts, reports, briefs, bundles | operator | template | 2026-06-27 | reference |
+| `output/AGENTS.md` | Naming, placement, and bundle structure rules for generated output | operator | accepted | 2026-07-08 | always |
 | `archive/` | Retired material | operator | template | 2026-06-27 | archive |
 | `.templates/` | Reusable document templates | operator | template | 2026-06-27 | reference |
 | `.ai/skills/` | Company OS managed starter skills | operator | template | 2026-06-28 | task |
