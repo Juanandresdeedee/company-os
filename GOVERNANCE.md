@@ -1,11 +1,12 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-27
+last_updated: 2026-07-11
 source_of_truth: company-os-starter-kit
 load_policy: always
 related:
   - /AGENTS.md
+  - /company/changelog.md
   - /decisions/README.md
   - /output/README.md
 ---
@@ -25,9 +26,13 @@ Use branch, review, merge for durable changes.
 
 Do not silently rewrite strategy, governance, skills, client context, or operating rules.
 
-## Ownership
+## Durable metadata
 
-Every durable file should identify an owner in frontmatter. Ownership means the person or function responsible for accuracy, review, and updates.
+Every canonical markdown file, including wiki and brand files, must carry the standard frontmatter fields: `owner`, `status`, `last_updated`, `source_of_truth`, `load_policy`, and `related`. Ownership means the person or function responsible for accuracy, review, and updates.
+
+Convert legacy frontmatter to this standard as part of harvesting a migrated file. Do not preserve an incompatible legacy metadata format in canonical context.
+
+Keep provenance out of canonical document bodies. Do not add inline attributions such as `(Source: 2026-07-10 meeting)`. Record provenance in `source_of_truth` and git history.
 
 ## Context and output
 
@@ -51,6 +56,17 @@ Harvest into:
 - `run/` for recurring operating processes
 - `change/` for transformation project learnings
 - `decisions/` for choices that explain why the OS works this way
+
+When the owner asks an agent to harvest, that request is acceptance. Write the harvested content as settled canonical statements without `proposed`, `pending confirmation`, or similar hedges. Evidence-gathering notes remain appropriate where future data is genuinely needed, for example `validate with customer interviews`.
+
+Every harvest ends with these bookkeeping steps:
+
+1. Set the source draft's frontmatter to `status: read` and leave it at the root of `output/`, named `YYYYMMDD-topic.md`. Do not create nested draft folders for new output files.
+2. Add a dated, newest-first entry to `company/changelog.md` summarizing what was harvested and where it landed.
+
+## Changelog boundary
+
+The root `CHANGELOG.md` records repository housekeeping: structure, templates, skills, tooling, and releases. `company/changelog.md` records changes and refinements the company decided to make to its context. Formal rationale remains in `decisions/`; the company changelog is the readable timeline of how company thinking evolved.
 
 ## Approval rules
 

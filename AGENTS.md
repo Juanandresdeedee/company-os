@@ -1,7 +1,7 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-27
+last_updated: 2026-07-11
 source_of_truth: company-os-starter-kit
 load_policy: always
 related:
@@ -42,6 +42,8 @@ This is the canonical guide for all AI tools working in this Company OS. Tool-sp
 6. Propose durable learnings as repo updates. Do not leave important knowledge only in chat history.
 7. External sends, deletes, deploys, money movement, credential changes, or client-confidential sharing require human approval.
 8. Respect `load_policy`. Do not load `archive` or `never` files without explicit need and approval.
+9. Every canonical markdown file, including wiki and brand files, must carry `owner`, `status`, `last_updated`, `source_of_truth`, `load_policy`, and `related` frontmatter.
+10. Keep provenance in `source_of_truth` and git history, not as inline source attributions in canonical document bodies.
 
 ## Source of truth boundaries
 
@@ -69,9 +71,11 @@ Harvesting turns work into durable capability:
 
 1. Human correction, repeated successful output, or project learning appears.
 2. Agent proposes a small update to a skill, playbook, process, workflow, or decision.
-3. Owner reviews through PR.
-4. Approved learning becomes canonical context.
-5. Future agents load the improved context.
+3. Owner reviews through PR, or asks an agent to harvest. A harvest request is acceptance: write settled canonical statements without `proposed` or `pending confirmation` hedges. Evidence-gathering notes may remain where future data is genuinely needed.
+4. Approved learning becomes canonical context. Convert legacy metadata to the standard frontmatter during harvesting.
+5. Mark the source draft `status: read` and leave it at `output/YYYYMMDD-topic.md`; do not create nested draft folders for new output files.
+6. Add a dated, newest-first entry to `company/changelog.md` saying what was harvested and where it landed.
+7. Future agents load the improved context.
 
 Be honest about what generalizes. Do not convert one-off circumstances into company rules.
 

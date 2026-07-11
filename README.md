@@ -1,13 +1,14 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-28
+last_updated: 2026-07-11
 source_of_truth: company-os-starter-kit
 load_policy: reference
 related:
   - /AGENTS.md
   - /ARCHITECTURE.md
   - /GOVERNANCE.md
+  - /company/changelog.md
   - /SKILLS.md
 ---
 
@@ -86,6 +87,8 @@ load_policy:
 related:
 ```
 
+This block is required on every canonical markdown file, including wiki and brand files. Convert legacy metadata to this format when harvesting migrated material.
+
 Allowed `load_policy` values:
 
 - `always`: load before most work.
@@ -97,3 +100,7 @@ Allowed `load_policy` values:
 ## Operating rule
 
 If an agent learns something durable, do not leave it only in chat memory. Propose an update to the relevant company, strategy, run, change, wiki, skill, or decision file.
+
+## Two changelogs
+
+The root `CHANGELOG.md` records changes to the starter-kit repository itself, including structure, templates, skills, tooling, and releases. `company/changelog.md` records changes and refinements the company decided to make to its context. Formal decisions still belong in `decisions/`; the company changelog provides the readable timeline.
