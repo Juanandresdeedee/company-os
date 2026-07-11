@@ -1,7 +1,7 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-28
+last_updated: 2026-07-11
 source_of_truth: company-os-starter-kit
 load_policy: always
 related:
@@ -17,14 +17,14 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 
 | File | purpose | owner | status | last updated | load policy |
 | --- | --- | --- | --- | --- | --- |
-| `README.md` | Company OS purpose, quick start, four-layer model, folder map | operator | template | 2026-06-28 | reference |
-| `AGENTS.md` | Canonical model-agnostic agent guide | operator | template | 2026-06-27 | always |
+| `README.md` | Company OS purpose, quick start, four-layer model, folder map | operator | template | 2026-07-11 | reference |
+| `AGENTS.md` | Canonical model-agnostic agent guide | operator | template | 2026-07-11 | always |
 | `CLAUDE.md` | Claude-specific entrypoint and compatibility notes | operator | template | 2026-06-27 | always |
 | `ARCHITECTURE.md` | Systems of record, Company OS, read layer, operating surface | operator | template | 2026-06-27 | always |
-| `GOVERNANCE.md` | PR workflow, ownership, harvest loop, guardrails | operator | template | 2026-06-27 | always |
+| `GOVERNANCE.md` | PR workflow, ownership, harvest loop, guardrails | operator | template | 2026-07-11 | always |
 | `INDEX.md` | Content catalog | operator | template | 2026-06-28 | always |
 | `SKILLS.md` | Installation and authoring guide for repository-managed AI skills | operator | template | 2026-06-28 | reference |
-| `CHANGELOG.md` | Human-reviewed notable changes for releases and project history | operator | template | 2026-06-28 | reference |
+| `CHANGELOG.md` | Repository housekeeping changelog for structure, skills, tooling, and releases | operator | template | 2026-07-11 | reference |
 | `LICENSE` | MIT license terms for repository reuse | operator | template | 2026-06-28 | reference |
 | `.gitignore` | Git ignore rules for local, editor, dependency, build, log, and cache files | operator | template | 2026-06-28 | reference |
 
@@ -32,7 +32,7 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 
 | Folder | purpose | owner | status | last updated | load policy |
 | --- | --- | --- | --- | --- | --- |
-| `company/` | Purpose, vision, values, structure, ICP, positioning, voice and market context | operator | template | 2026-06-27 | task |
+| `company/` | Purpose, vision, values, structure, ICP, positioning, voice and market context | operator | template | 2026-07-11 | task |
 | `strategy/` | Goal, today, analysis, thesis and tradeoffs | operator | template | 2026-06-27 | task |
 | `run/` | Strategic processes, owners, cadence, metrics, systems of record | operator | template | 2026-06-27 | task |
 | `change/` | Strategic projects, outcomes, owners, start and end dates, risks, and target operating changes | operator | template | 2026-06-27 | task |
@@ -44,7 +44,7 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 | `workflows/` | Function-level operating guides | operator | template | 2026-06-27 | task |
 | `decisions/` | ADR-style decisions | operator | template | 2026-06-27 | reference |
 | `decisions/AGENTS.md` | Rules for creating and updating decisions | operator | template | 2026-06-27 | always |
-| `output/` | Generated drafts, reports, briefs, bundles | operator | template | 2026-06-27 | reference |
+| `output/` | Generated drafts, reports, briefs, bundles | operator | template | 2026-07-11 | reference |
 | `output/AGENTS.md` | Naming, placement, and bundle structure rules for generated output | operator | accepted | 2026-07-08 | always |
 | `archive/` | Retired material | operator | template | 2026-06-27 | archive |
 | `.templates/` | Reusable document templates | operator | template | 2026-06-27 | reference |
@@ -59,10 +59,11 @@ Use this file as the map of the Company OS. Update it when adding, moving, or re
 | `company/values.md` | Values that shape decisions | operator | draft | 2026-06-27 | task |
 | `company/structure.md` | Company functions, ownership, communication routes and decision rights | operator | draft | 2026-06-27 | task |
 | `company/icp.md` | Best-fit and bad-fit customers | operator | draft | 2026-06-27 | task |
-| `company/positioning.md` | Category, promise, differentiation, alternatives | operator | draft | 2026-06-27 | task |
+| `company/positioning.md` | Category, promise, differentiation, alternatives, and claim validation | operator | draft | 2026-07-11 | task |
 | `company/voice.md` | Tone, writing rules, banned phrases | operator | draft | 2026-06-27 | task |
-| `company/terminology.md` | Canonical terms and definitions | operator | draft | 2026-06-27 | reference |
-| `company/design-system.md` | Visual identity and design constraints | operator | draft | 2026-06-27 | reference |
+| `company/terminology.md` | Canonical terms, definitions, and ownership hierarchy | operator | draft | 2026-07-11 | reference |
+| `company/changelog.md` | Newest-first timeline of harvested company-context refinements | operator | template | 2026-07-11 | reference |
+| `company/design-system.md` | Visual identity and design constraints | operator | draft | 2026-07-11 | reference |
 | `company/market/README.md` | Guide for market context | operator | template | 2026-06-27 | reference |
 | `company/market/intel.md` | Durable market context and buying signals | operator | draft | 2026-06-27 | reference |
 | `company/market/competition.md` | Competitor categories and alternatives | operator | draft | 2026-06-27 | reference |

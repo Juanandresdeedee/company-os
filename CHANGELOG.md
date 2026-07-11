@@ -1,7 +1,7 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-28
+last_updated: 2026-07-11
 source_of_truth: company-os-starter-kit
 load_policy: reference
 related:
@@ -17,5 +17,6 @@ This project follows a human-reviewed changelog model. Add entries under `Unrele
 
 ## Unreleased
 
+- Added a company-context changelog, end-to-end harvest bookkeeping, universal durable metadata and provenance rules, validation registers for positioning and brand, and terminology hierarchy guidance.
 - Added a repository-managed `board-of-directors` skill for board-style review of high-stakes company decisions.
 - Added repository housekeeping files: `.gitignore`, `CHANGELOG.md`, and `LICENSE`.

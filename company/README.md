@@ -1,7 +1,7 @@
 ---
 owner: operator
 status: template
-last_updated: 2026-06-27
+last_updated: 2026-07-11
 source_of_truth: company-os-starter-kit
 load_policy: task
 related:
@@ -41,6 +41,7 @@ related:
 - `voice.md`
 - `terminology.md`
 - `design-system.md`
+- `changelog.md`
 - `market/README.md`
 - `market/intel.md`
 - `market/competition.md`
