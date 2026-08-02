@@ -1,7 +1,7 @@
 ---
 owner: operator
 status: accepted
-last_updated: 2026-07-08
+last_updated: 2026-08-02
 source_of_truth: company-os-starter-kit
 load_policy: always
 related:
@@ -22,7 +22,8 @@ These rules apply to everything under `output/`.
 
 ## Placement
 
-- Write the dated file into the working subfolder it belongs to, not loose in `output/`.
+- Write new dated files directly in `output/` as single files or dated bundles (a lead file plus an artifacts directory).
+- Do not create category or working subfolders for new output.
 - `README.md` files are exempt from the date stamp.
 
 ## Single file vs bundle
